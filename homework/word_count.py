@@ -49,7 +49,6 @@ def clean_text(dataframe):
 
 def count_words(dataframe):
     """Word count"""
-
     dataframe = dataframe.copy()
     dataframe["line"] = dataframe["line"].str.split()
     dataframe = dataframe.explode("line")
